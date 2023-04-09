@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    background: rgb(235, 235, 235);
+}
+.calculator{
+    width:  350px;
+    height: auto;
+    background-color: #424242;
+    padding: 15px;
+}
+.calculator-result input{
+    border-radius: 0px 0px 20px 20px;
+    border: none;
+    height: 250px;
+    background-color: #4A3168;
+    color: white;
+    text-align: end;
+    font-size: 40px;
+    padding: 10px;
+    width: 100%;
+    overflow-x: scroll;
+}
+.calculator-result input:focus{
+    outline: none;
+}
+#result{
+    display: flex;
+    width: 100%;
+}
+.calculator-buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.calculator-buttons button{
+    height: 70px;
+    font-size: 30px;
+    border: none;
+    color: white;
+    border: 1px solid rgb(138, 138, 138);
+}
+.number:hover{
+    transition: all 200ms linear;
+    background-color: #636363;
+}
+.operator:hover{
+    background-color: #6719cc;
+    transition: all 200ms linear;
+}
+.resultado:hover{
+    background-color: #6c05f4;
+    transition: all 200ms linear;
+}
+.delete:hover{
+    background-color: #5b5b5b;
+    transition: 200ms linear;
+}
+.number{
+    background-color: #6C6C6C;
+}
+.operator{
+    background-color: #7846B8;
+}
+.resultado{
+    background-color: #6c1cd6;
+}
+.delete{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 60px;
+    background-color: #6C6C6C;
+    border: none;
+    margin: 10px 0px 0px 0px;
+    color: #ccc;
+}
+@media screen and (max-width: 680px) {
+    .calculator{
+        width:  290px;
+        height: auto;
+        background-color: #424242;
+        padding: 15px;
+    }
+    .calculator-result input{
+        border-radius: 0px 0px 20px 20px;
+        border: none;
+        height: 190px;
+        background-color: #4A3168;
+        color: white;
+        text-align: end;
+        font-size: 40px;
+        padding: 10px;
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
